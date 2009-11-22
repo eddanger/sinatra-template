@@ -1,0 +1,9 @@
+= Sinatra Application Template
+
+Includes Bundler, RSpec, and Haml.
+
+== Getting Started
+
+  gem bundle
+  bin/rackup
+
