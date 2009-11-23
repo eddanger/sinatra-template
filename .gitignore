@@ -1,2 +1,7 @@
-bin
-vendor/gems
+.DS_Store
+bin/*
+vendor/gems/*
+!vendor/gems/cache/
+!vendor/gems/dirs/
+doc/*
+coverage/*

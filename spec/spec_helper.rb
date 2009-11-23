@@ -1,20 +1,36 @@
 require 'application'
 
+ENV['RACK_ENV'] ||= 'test'
+
+require File.join(File.expand_path(File.dirname(__FILE__)), '..', 'vendor', 'gems', 'environment')
+
 Bundler.require_env(:test)
 
 require 'rack/test'
+require 'spec'
+require 'spec/autorun'
 
-# set test environment
-set :environment, :test
-set :run, false
-set :raise_errors, true
-set :logging, false
+# %w(fixtures support).each do |path|
+#   Dir[ File.join(project_root, path, '/**/*.rb') ].each do |m|
+#     require m
+#   end
+# end
 
 Spec::Runner.configure do |config|
+  config.include(Rack::Test::Methods)
+ 
+  def app
+    @app ||= Rack::Builder.app do
+      use Rack::Session::Cookie
 
-  config.before :all do
-    # TODO: Future awesomeness: http://github.com/dsturnbull/rackjour
-    # puts "find a server to run this spec..."
+      # use Warden::Manager do |manager|
+      #   manager.default_strategies :password
+      #   manager.failure_app = TestingLogin
+      # end
+
+      # use Rack::Flash
+
+      run Application
+    end
   end
-
 end

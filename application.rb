@@ -1,4 +1,4 @@
-require File.expand_path(File.join(File.dirname(__FILE__), 'vendor', 'gems', 'environment'))
+require File.join(File.expand_path(File.dirname(__FILE__)), 'vendor', 'gems', 'environment')
 
 Bundler.require_env(:app)
 

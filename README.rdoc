@@ -1,6 +1,6 @@
 = Sinatra Application Template
 
-Includes Bundler, RSpec, and Haml.
+Includes Bundler, RSpec, RCov, YARD, Haml and of course Sinatra
 
 == Getting Started
 
