@@ -4,6 +4,22 @@ Includes Bundler, RSpec, RCov, YARD, Haml and of course Sinatra
 
 == Getting Started
 
+  sudo gem install bundler
   gem bundle
-  bin/rackup
 
+== Run your application
+
+  ./bin/rackup
+
+== Compile stylesheets with LESS (http://lesscss.org/)
+
+  ./bin/lessc styles/style.less public/css/style.css
+
+== Run specs with RSpec (http://rspec.info/)
+
+  ./bin/rake spec
+  ./bin/rake rcov
+
+== Generate documentation with YARD (http://yardoc.org/)
+
+  ./bin/rake yarddoc

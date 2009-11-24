@@ -3,7 +3,15 @@ require File.join(File.expand_path(File.dirname(__FILE__)), 'vendor', 'gems', 'e
 Bundler.require_env(:app)
 
 class Application < Sinatra::Base
+
+  
+  configure do
+    enable :static
+    set :root, File.dirname(__FILE__)
+  end  
+  
   get "/" do
     haml :index
   end
+
 end

@@ -3,8 +3,11 @@
   %head
     %title My Sinatra Application Template
 
-  %body
+    %link{ :rel => "stylesheet", :href => "/css/style.css", :type => "text/css" }
 
-    %h1 My Sinatra Application Template
+  %body
+  
+    #header
+      %h1 My Sinatra Application Template
 
     = yield

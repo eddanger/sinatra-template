@@ -1,0 +1,25 @@
+@brand_color: #669;
+
+.rounded_corners (@radius: 5px) {
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+
+#header {
+  .rounded_corners;
+
+  color: #ccc;
+  background-color: @brand_color;
+  padding: 10px;
+  
+  h1 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: @brand_color;
+}

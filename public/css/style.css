@@ -1,0 +1,14 @@
+#header {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #cccccc;
+  background-color: #666699;
+  padding: 10px;
+}
+#header h1 {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+h1, h2, h3, h4, h5, h6 { color: #666699; }
