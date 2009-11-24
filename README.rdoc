@@ -4,10 +4,13 @@ Includes Bundler, RSpec, RCov, YARD, Haml and of course Sinatra
 
 == Getting Started
 
+Make sure you are running the latest RubyGems:
+  sudo gem update --system
+
 Install Bundler (http://github.com/wycats/bundler)
   sudo gem install bundler
 
-Runing Bundler
+Running Bundler
   gem bundle
 
 == Run your application
@@ -27,4 +30,4 @@ Run all specs with coverage (http://eigenclass.org/hiki.rb?rcov)
 
 == Generate documentation with YARD (http://yardoc.org/)
 
-  ./bin/rake yarddoc
+  ./bin/rake yard
