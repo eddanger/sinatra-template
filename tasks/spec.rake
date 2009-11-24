@@ -18,5 +18,6 @@ else
     spec.spec_opts = %w(-fs --color)
     # spec.warning = true
     spec.rcov = true
+    spec.rcov_opts = ['--exclude', 'spec']
   end
 end

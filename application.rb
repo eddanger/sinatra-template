@@ -4,7 +4,6 @@ Bundler.require_env(:app)
 
 class Application < Sinatra::Base
 
-  
   configure do
     enable :static
     set :root, File.dirname(__FILE__)
